@@ -1,0 +1,34 @@
+﻿<Window x:Class="MoviesDB_Manager.SearchMovieByOscarYear"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoviesDB_Manager"
+        mc:Ignorable="d"
+        Title="Search Movie By Oscar Year" Height="200" Width="200" ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="2"
+               Grid.ColumnSpan="3">Year of Oscar:</Label>
+        <TextBox Name="textBox" Grid.Row="2" Grid.Column="2"
+                 Grid.ColumnSpan="3"/>
+        <Button Name="searchButton" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3"
+                Click="search_click">Search</Button>
+    </Grid>
+</Window>

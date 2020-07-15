@@ -1,0 +1,44 @@
+﻿<Window x:Class="MoviesDB_Manager.AddMovieToActor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoviesDB_Manager"
+        mc:Ignorable="d"
+        Title="Add Movie To Actor" Height="220" Width="360" ResizeMode="NoResize"
+        Initialized="window_opened">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="1"
+                   HorizontalAlignment="Center" FontWeight="UltraBold">Actor:</Label>
+        <ComboBox Name="actorsComboBox" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <Label Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="1"
+                   HorizontalAlignment="Center" FontWeight="UltraBold">Movie:</Label>
+        <Label Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3">Title:</Label>
+        <TextBox Name="titleTextBox" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+                 Height="20"/>
+        <ComboBox Name="moviesComboBox" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="2"
+                  IsEnabled="False"/>
+        <CheckBox Name="checkBox" Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2"
+                  Checked="checkedCB" Unchecked="uncheckedCB">Choose exist</CheckBox>
+        <Button Grid.Row="6" Grid.Column="3" Click="add_click">Add</Button>
+    </Grid>
+</Window>

@@ -1,0 +1,67 @@
+﻿<Window x:Class="MoviesDB_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MoviesDB_Manager"
+        mc:Ignorable="d"
+        Title="Manage Movies" Height="250" Width="800" ResizeMode="NoResize">
+    <DockPanel Name="moviesPanel">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Add">
+                <MenuItem Header="Movie" Click="add_movie_click" />
+                <MenuItem Header="Actor" Click="add_actor_click"/>
+                <MenuItem Header="Director" Click="add_director_click"/>
+                <MenuItem Header="Oscar" Click="add_oscar_click"/>
+                <MenuItem Header="Movie to Actress" Click="add_movie2actress_click"/>
+                <MenuItem Header="Movie to Actor" Click="add_movie2actor_click"/>
+                <MenuItem Header="Movie to Director" Click="add_movie2director_click"/>
+                <MenuItem Header="Actress to Movie" Click="add_actress2movie_click"/>
+                <MenuItem Header="Actor to Movie" Click="add_actor2movie_click"/>
+                <MenuItem Header="Director to Movie" Click="add_director2movie_click"/>
+                <Separator />
+            </MenuItem>
+            <MenuItem Header="Show">
+                <MenuItem Header="Movies" Click="show_movies" />
+                <MenuItem Header="Actors" Click="show_actors"/>
+                <MenuItem Header="Directors" Click="show_directors"/>
+                <MenuItem Header="Oscars" Click="show_oscars"/>
+                <Separator />
+            </MenuItem>
+            <MenuItem Header="Search">
+                <MenuItem Header="By Year" Click="search_by_year"/>
+                <MenuItem Header="By 2 Actors" Click="search_by_actors"/>
+                <MenuItem Header="By Oscar Year" Click="search_by_oscarYear"/>
+                <MenuItem Header="Movie Details" Click="search_by_movie"/>
+                <Separator />
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Header="Edit Birth Year" Click="edit_yearBorn" 
+                          Name="editBirthYear"/>
+                <MenuItem Header="Edit Movie Year" Click="edit_movieYear"
+                          Name="editMovieYear"/>
+                <MenuItem Header="Edit Movie IMDB" Click="edit_movieImdb"
+                          Name="editMovieIMDB"/>
+                <MenuItem Header="Edit Movie Country" Click="edit_movieCountry"
+                          Name="editMovieCountry"/>
+                <Separator />
+            </MenuItem>
+        </Menu>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="113*"/>
+                <ColumnDefinition Width="288*"/>
+                <ColumnDefinition Width="400*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Name="entityTextBlock" Margin="10,10,10,10" Grid.Column="0" Text="" Grid.ColumnSpan="2"/>
+            <ListBox  Name="itemsListBox" Margin="10,10,10,10" Grid.Row="1"
+                      MouseDoubleClick="lbItems_Selection" Grid.ColumnSpan="2"/>
+            <TextBlock Name="detailsTextBlock" Margin="10,10,10,10" Grid.Column="2" Text=""/>
+            <ListBox  Name="dataListBox" Margin="10,10,10,10" Grid.Row="1" Grid.Column="2"/>
+        </Grid>
+    </DockPanel>
+</Window>

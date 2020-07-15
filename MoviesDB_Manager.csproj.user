@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddActor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddActorToMovie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddActressToMovie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddDirector.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddDirectorToMovie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddMovie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddMovieToActor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddMovieToActress.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddMovieToDirector.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddOscar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchMovieBy2Actors.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchMovieByOscarYear.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SearchMovieByYear.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShowMovieDetails.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddActor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddActorToMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddActressToMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddDirector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddDirectorToMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddMovieToActor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddMovieToActress.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddMovieToDirector.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddOscar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchMovieBy2Actors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchMovieByOscarYear.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SearchMovieByYear.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ShowMovieDetails.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
